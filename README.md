@@ -29,3 +29,36 @@ Use score to predict the classes of *X_test*, comparegit them to *y_test* and re
 ```
 precisions = classifier.score(X_test, y_test)
 ```
+
+## Example on Credal Dog-4
+
+### Credal Dog-4
+
+### Code
+
+```
+from sklearn.model_selection import train_test_split
+from evidential_random_forest import ERF
+import numpy as np
+
+X = np.loadtxt('X.csv', delimiter=';')
+y = np.loadtxt('y.csv', delimiter=';')
+y_true = np.loadtxt('y_true.csv', delimiter=';')
+
+indexes = [i for i in range(X.shape[0])]
+train, test, _, _ = train_test_split(indexes, indexes, test_size=.2)
+
+classifier = ERF()
+
+classifier.fit(X[train], y[train])
+
+precision = classifier.score(X[test], y_true[test])
+
+print("Accuracy : ", precision)
+```
+
+Accuracy = 0.34
+
+### Details
+
+
