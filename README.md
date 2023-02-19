@@ -30,9 +30,15 @@ Use score to predict the classes of *X_test*, comparegit them to *y_test* and re
 precisions = classifier.score(X_test, y_test)
 ```
 
-## Example on Credal Dog-4
+## Example on Credal Dog-2
 
-### Credal Dog-4
+### Credal Dog-2
+
+Link to the dataset : [Credal Dog-2](https://github.com/ArthurHoa/credal-datasets)
+
+Brittany | Beagle
+:--:|:--:
+<img src="https://github.com/ArthurHoa/credal-datasets/blob/master/ressources/pictures/Brittany.jpg?raw=true" width="70"> |  <img src="https://github.com/ArthurHoa/credal-datasets/blob/master/ressources/pictures/Beagle.jpg?raw=true" width="70">  
 
 ### Code
 
@@ -57,8 +63,17 @@ precision = classifier.score(X[test], y_true[test])
 print("Accuracy : ", precision)
 ```
 
-Accuracy = 0.34
+Accuracy = 0.95
 
-### Details
+### Output of the model
 
+An exmaple of the Evidential Random Forest prediction for the following picture is given as follows:
 
+<img src="https://www.dropbox.com/s/2wb8u7y7ol95dar/58.jpg?raw=true" width="120">  
+  
+Prediction:  
+m({Brittany}) = 0.27  
+m({Beagle}) = 0.47  
+m({Beagle, Brittany}) = 0.26  
+  
+True class: Beagle
