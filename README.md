@@ -12,7 +12,6 @@ The model creates a forest of evidential decision trees estimators using bagging
 
 When using this code please cite and refer to [Paper being published](https://github.com/ArthurHoa/evidential-random-forest)
 
-
 ### How to use
 
 Initialize the model:
@@ -69,7 +68,7 @@ Accuracy = 0.95
 
 An exmaple of the Evidential Random Forest prediction for the following picture is given as follows:
 
-<img src="https://www.dropbox.com/s/2wb8u7y7ol95dar/58.jpg?raw=true" width="120">  
+<img src="https://www.dropbox.com/s/2wb8u7y7ol95dar/58.jpg?raw=true" width="150">  
   
 Prediction:  
 m({Brittany}) = 0.27  
