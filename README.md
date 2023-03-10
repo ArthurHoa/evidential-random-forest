@@ -15,17 +15,20 @@ When using this code please cite and refer to [Paper being published](https://gi
 ### How to use
 
 Initialize the model:
-```
+
+```python
 classifier = ERF()
 ```
 
 Train the model on the training set, with the attrributes *X_train* and the labels *y_train* defined on $2^M$, with *M* the number of classes :
-```
+
+```python
 classifier.fit(X_train, y_train)
 ```
 
 Use score to predict the classes of *X_test*, comparegit them to *y_test* and return the accuracy of the model:
-```
+
+```python
 precisions = classifier.score(X_test, y_test)
 ```
 
@@ -41,7 +44,7 @@ Brittany | Beagle
 
 ### Code
 
-```
+```python
 from sklearn.model_selection import train_test_split
 from evidential_random_forest import ERF
 import numpy as np
